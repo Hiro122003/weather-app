@@ -14,7 +14,7 @@ type DayForecast = {
 
 type WeekForecastProps = {
   data:{
-    forecast:{
+    forecast?:{
       forecastday:DayForecast[];
     }
   }

@@ -36,15 +36,16 @@ export default function Home() {
   let content;
   if (Object.keys(data).length === 0 && error === "") {
     content = (
-      <div>
-        <h2>Welcome to the weather app</h2>
+      <div className="text-white text-center h-screen mt-[5rem]">
+        <h2 className="text-3xl font-semibold mb-4">Welcome to the weather app</h2>
+        <p className="text-xl font-semibold ">Enter a city name to get the weather forecast</p>
       </div>
     );
   } else if (error !== "") {
     content = (
-      <div>
-        <p>City not Found</p>
-        <p>Enter a Valid City</p>
+      <div className="text-white text-center h-screen mt-[5rem]">
+        <p className="text-3xl font-semibold mb-4">City not Found</p>
+        <p className="text-xl">Enter a Valid City</p>
       </div>
     );
   } else {
